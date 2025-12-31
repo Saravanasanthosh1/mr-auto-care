@@ -136,6 +136,7 @@
       ?.addEventListener("click", collapseAll);
     const isDesktop = () => window.matchMedia("(min-width:980px)").matches;
     //if(isDesktop()) expandAll(); else collapseAll();
+    expandAll();
   }
 
   // Gallery slider autoplay (5 seconds) + prev/next + keyboard
