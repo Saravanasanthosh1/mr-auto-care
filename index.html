@@ -1,829 +1,259 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>MR AUTO REPAIRS — All Services</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link href="assets/site.css" rel="stylesheet" />
-    <script defer src="assets/i18n.js"></script>
-    <script defer src="assets/main.js"></script>
-  </head>
-  <body>
-    <div class="topbar" role="region" aria-label="Notice">
-      <div class="container callout">
-        <span data-i18n="ribbon">24/7 Breakdown Support • Call:</span>
-        <a
-          href="tel:+919865625885"
-          style="color: #fff; text-decoration: underline"
-          >+91 98656 25885</a
-        >
-        •
-        <a
-          href="tel:+919790566797"
-          style="color: #fff; text-decoration: underline"
-          >+91 97905 66797</a
-        >
+<head>
+  <meta charset="utf-8" />
+  <title>MR AUTO REPAIRS — All Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="assets/site.css" rel="stylesheet">
+  <script defer src="assets/i18n.js"></script>
+  <script defer src="assets/main.js"></script>
+</head>
+<body>
+  <div class="topbar" role="region" aria-label="Notice">
+    <div class="container callout">
+      <span data-i18n="ribbon">24/7 Breakdown Support • Call:</span>
+      <a href="tel:+919790566797" style="color:#fff;text-decoration:underline">+91 97905 66797</a>
+    </div>
+  </div>
+  <header>
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="#">
+        <img src="assets/logo.png" alt="MR Auto Repairs logo" />
+        <span>MR AUTO REPAIRS</span>
+      </a>
+      <div class="menu" id="primaryMenu">
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="btn btn-outline" id="lang-en" onclick="I18N_APPLY('en')" aria-pressed="true">EN</button>
+          <button class="btn btn-outline" id="lang-ta" onclick="I18N_APPLY('ta')" aria-pressed="false">தமிழ்</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-banner">
+      <div class="container frame">
+        <div class="hero-grid">
+          <div>
+            <h1 class="hero-title" data-i18n="hero_title">ALL SERVICES</h1>
+            <p class="hero-sub" data-i18n="hero_sub">We deliver fast, professional service for all your vehicle's maintenance needs.</p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_schedule">Schedule Appointment</a>
+              <a href="tel:+919790566797" class="btn btn-outline" data-i18n="hero_btn_call">Call +91 97905 66797</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="car-card">
+              <img src="assets/car.png" alt="Car">
+              <ul class="ticklist">
+                <li><img class="tickimg" src="assets/tick.png" alt="tick"> 10 Minute Oil Change</li>
+                <li><img class="tickimg" src="assets/tick.png" alt="tick"> Tire Repair</li>
+                <li><img class="tickimg" src="assets/tick.png" alt="tick"> Brake Service</li>
+                <li><img class="tickimg" src="assets/tick.png" alt="tick"> Full Service Mechanical</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 data-i18n="services_h2">Services that keep you moving</h2>
+        <div class="svc-category"><h3>Maintenance</h3><div class="svc-grid"><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/oil_changes.png" alt="Oil Changes"><span>Oil Changes</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Signature ~10‑minute oil change</li><li>No appointment; stay in your car</li><li>Certified technicians</li><li>20‑point courtesy inspection</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/air_filter.png" alt="Cabin & Engine Air Filter Replacement"><span>Cabin & Engine Air Filter Replacement</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Inspect cabin & engine filters</li><li>Quick replacement</li><li>Improves air quality & performance</li><li>Included in courtesy check</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/alignment.png" alt="Wheel Alignment Service"><span>Wheel Alignment Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Correct misalignment</li><li>Even tyre wear</li><li>Straight, smooth tracking</li><li>Pro technicians</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/brake_rotors.png" alt="Brake Rotors"><span>Brake Rotors</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Inspect/service/replace</li><li>Prevent grinding & damage</li><li>Safe stopping</li><li>Timely rotor care</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/brake_pads.png" alt="Brake Pads"><span>Brake Pads</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Fast pad replacement</li><li>Safety inspection</li><li>Protect discs</li><li>Drive with confidence</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/battery.png" alt="Battery Testing & Replacement"><span>Battery Testing & Replacement</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Professional testing</li><li>Quick replacement</li><li>Avoid no‑starts</li><li>Reliable power</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/cooling_system.png" alt="Cooling System Repair Service"><span>Cooling System Repair Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Radiator, pump, thermostat</li><li>Belts, hoses & fans</li><li>Flushes & repairs</li><li>Right engine temperature</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/fuel_system.png" alt="Fuel System Cleaning Service"><span>Fuel System Cleaning Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Clean lines, pump, injectors</li><li>Restore power & efficiency</li><li>Best engine performance</li><li>Prevent build‑up</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/headlights.png" alt="Headlight Replacement Service"><span>Headlight Replacement Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Bulbs stocked</li><li>Fast replacement</li><li>Night & weather safety</li><li>Stay visible</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/scheduled_maintenance.png" alt="Factory‑Scheduled Service & Routine Maintenance"><span>Factory‑Scheduled Service & Routine Maintenance</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Follow manufacturer schedule</li><li>Extend life & safety</li><li>Prevent costly repairs</li><li>Comprehensive checks</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/state_inspection.png" alt="State Inspections & Emissions Testing"><span>State Inspections & Emissions Testing</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Quick, accurate</li><li>Law compliant</li><li>Safety & emissions</li><li>Affordable</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/tire_repair.png" alt="Tire Repair Service"><span>Tire Repair Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Assess flats & damage</li><li>Safe repair when possible</li><li>Quick turnaround</li><li>Replacement if needed</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/tire_rotation.png" alt="Tire Rotation & Balance"><span>Tire Rotation & Balance</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Extend tyre life</li><li>Improve safety</li><li>Regular rotation & balance</li><li>Smoother ride</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/transmission_flush.png" alt="Transmission Flush Service"><span>Transmission Flush Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Replace degraded fluid</li><li>Remove debris</li><li>Protect smooth shifting</li><li>Extend life</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/windshield_wipers.png" alt="Windshield Wipers"><span>Windshield Wipers</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Checked every visit</li><li>Quick replacement</li><li>Clear visibility</li><li>All‑weather safety</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/tune_up.png" alt="Car Tune‑Up Service & Engine Repair"><span>Car Tune‑Up Service & Engine Repair</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Restore performance</li><li>Lower emissions</li><li>Routine tune‑ups</li><li>Reliable running</li></ul></div>
+    </div></div></div>
+        <div class="svc-category"><h3>Repair Services</h3><div class="svc-grid"><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/ac_repair.png" alt="Car A/C Repair Service"><span>Car A/C Repair Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Inspect, diagnose & repair</li><li>Restore comfort & defogging</li><li>Improve air quality</li><li>Fast service</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/belts_hoses.png" alt="Belt & Hose Repair Service"><span>Belt & Hose Repair Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Inspect every oil change</li><li>Replace early</li><li>Keep key systems running</li><li>Prevent roadside failures</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/car_diagnostic.png" alt="Car Diagnostic Service"><span>Car Diagnostic Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Read trouble codes</li><li>Targeted inspection</li><li>Clear repair plan</li><li>Drive safely</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/drivetrain.png" alt="Drivetrain Service"><span>Drivetrain Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Inspect & repair components</li><li>Smooth power delivery</li><li>Prevent damage</li><li>Reliable performance</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/exhaust_muffler.png" alt="Exhaust & Muffler Repair Service"><span>Exhaust & Muffler Repair Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Diagnose noise/smell/vibration</li><li>Restore performance</li><li>Safety checks</li><li>Timely repairs</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/radiator.png" alt="Radiator Repair Service"><span>Radiator Repair Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Overheating & leak diagnosis</li><li>Service/repair radiator</li><li>Correct engine temp</li><li>Avoid damage</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/shocks_struts.png" alt="Shocks & Struts Repair Service"><span>Shocks & Struts Repair Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Fix bumpy ride</li><li>Replace worn units</li><li>Improve stability</li><li>Comfortable handling</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/starter_alternator.png" alt="Starter & Alternator Service"><span>Starter & Alternator Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Inspect electrical system</li><li>Prevent no‑start</li><li>Reliable charging</li><li>Proactive maintenance</li></ul></div>
+    </div><div class="svc-wrap">
+      <div class="svc-tile" role="button"><img src="images/services/steering_suspension.png" alt="Steering & Suspension Repair Service"><span>Steering & Suspension Repair Service</span></div>
+      <div class="svc-details"><h4>What we cover</h4><ul><li>Inspect systems</li><li>Smooth bumps</li><li>Responsive control</li><li>Safety & stability</li></ul></div>
+    </div></div></div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery-section" class="section">
+      <div class="container">
+        <h2 data-i18n="gallery_h2">Gallery</h2>
+        <div id="gallery" class="gallery" data-folder="images/gallery" data-count="10" data-base="image" data-ext="jpg">
+          <div class="gallery__viewport"><div id="galleryStage" class="gallery__stage"></div></div>
+          <div class="gallery__controls">
+            <button id="galleryPrev" class="btn btn-outline" aria-label="Previous">◀ Prev</button>
+            <button id="galleryNext" class="btn btn-outline" aria-label="Next">Next ▶</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & SCHEDULE -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 data-i18n="contact_h2">Contact & Schedule</h2>
+        <div class="gradient-panel">
+          <div class="info-grid">
+            <div class="info-card"><h3 style="margin-top:0">Reach us anytime</h3>
+              <div class="info-item">📞 <a href="tel:+919790566797" style="color:#fff;text-decoration:underline">+91 97905 66797</a></div>
+              <div class="info-item">📍 Thiruvaimuthaleur bus stop, Athiyur Road, Kunnathur 638 103</div>
+              <div class="info-item">💬 <a href="https://wa.me/919790566797" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">WhatsApp</a></div>
+              <div class="info-item">✅ 24/7 Breakdown • Shop hours: call to confirm</div>
+            </div>
+            <div class="info-card" aria-label="Request appointment">
+              <h3 class="form-title">Request an appointment</h3>
+              <form onsubmit="return false">
+                <div class="form-grid">
+                  <div><label for="name" style="color:#fff">Full Name</label><input id="name" class="input" type="text" required /></div>
+                  <div><label for="phone" style="color:#fff">Phone</label><input id="phone" class="input" type="tel" required value="+91 97905 66797" /></div>
+                  <div><label for="date" style="color:#fff">Preferred Date</label><input id="date" class="input" type="date" /></div>
+                  <div><label for="time" style="color:#fff">Preferred Time</label><input id="time" class="input" type="time" /></div>
+                  <div><label for="vehicle" style="color:#fff">Vehicle (Make/Model)</label><input id="vehicle" class="input" type="text" /></div>
+                  <div class="form-row-full"><label style="color:#fff">Service Needed (select all that apply)</label>
+                    <div class="checkbox-group">
+                      <span class="chip"><input id="svc_mech" type="checkbox"><label for="svc_mech">🔧 Mechanical</label></span>
+                      <span class="chip"><input id="svc_ac" type="checkbox"><label for="svc_ac">❄️ A/C</label></span>
+                      <span class="chip"><input id="svc_align" type="checkbox"><label for="svc_align">📏 Alignment</label></span>
+                      <span class="chip"><input id="svc_polish" type="checkbox"><label for="svc_polish">✨ Polishing</label></span>
+                      <span class="chip"><input id="svc_interior" type="checkbox"><label for="svc_interior">🧽 Interior</label></span>
+                      <span class="chip"><input id="svc_wash" type="checkbox"><label for="svc_wash">🚿 Wash</label></span>
+                      <span class="chip"><input id="svc_gas" type="checkbox"><label for="svc_gas">🛠️ Gas Fitting</label></span>
+                      <span class="chip"><input id="svc_tinker" type="checkbox"><label for="svc_tinker">🎨 Tinkering/Paint</label></span>
+                      <span class="chip"><input id="svc_other" type="checkbox"><label for="svc_other">➕ Other</label></span>
+                    </div>
+                  </div>
+                </div>
+                <label for="msg" style="color:#fff">Notes</label>
+                <textarea id="msg" class="input" rows="3"></textarea>
+                <div class="submit-row"><button class="btn btn-gradient" type="submit">Request Appointment</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating WhatsApp -->
+  <a class="whatsapp" href="https://wa.me/919790566797?text=Hello%20MR%20AUTO%20REPAIRS%2C%20I%20need%20service" target="_blank" rel="noopener" aria-label="WhatsApp chat">
+    <img src="assets/whatsapp.svg" alt="WhatsApp" />
+    <span data-i18n="whatsapp_label">WhatsApp</span>
+  </a>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><img src="assets/logo.png" alt="Logo" style="height:40px"><strong>MR AUTO REPAIRS</strong></div>
+          <p>Performance engineering for automobiles—multibrand service & 24/7 breakdown.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact">Schedule</a>
+            <a class="btn btn-outline" href="tel:+919790566797">Call +91 97905 66797</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Popular Services</h4>
+          <ul class="footer-list">
+            <li><a href="#services">Oil Change</a></li>
+            <li><a href="#services">Brake Service</a></li>
+            <li><a href="#services">Alignment</a></li>
+            <li><a href="#services">A/C Repair</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Connect</h4>
+          <ul class="footer-list">
+            <li><a href="tel:+919790566797">Call</a></li>
+            <li><a href="https://wa.me/919790566797" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:service@yourdomain.com">service@yourdomain.com</a></li>
+          </ul>
+          <h4 class="footer-title" style="margin-top:1rem">Get updates</h4>
+          <div class="news"><input type="email" placeholder="Enter email"><button>Subscribe</button></div>
+        </div>
       </div>
     </div>
-    <header>
-      <nav class="container nav" aria-label="Primary">
-        <a class="brand" href="#">
-          <img src="assets/logo.png" alt="MR Auto Repairs logo" />
-          <span>MR AUTO REPAIRS</span>
-        </a>
-        <div class="menu" id="primaryMenu">
-          <a href="#services" data-i18n="nav_services">Services</a>
-          <a href="#contact" data-i18n="nav_contact">Contact</a>
-          <div class="lang-switch" role="group" aria-label="Language switch">
-            <button
-              class="btn btn-outline"
-              id="lang-en"
-              onclick="I18N_APPLY('en')"
-              aria-pressed="true"
-            >
-              EN
-            </button>
-            <button
-              class="btn btn-outline"
-              id="lang-ta"
-              onclick="I18N_APPLY('ta')"
-              aria-pressed="false"
-            >
-              தமிழ்
-            </button>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <!-- HERO -->
-      <section class="hero-banner">
-        <div class="container frame">
-          <div class="hero-grid">
-            <div>
-              <h1 class="hero-title" data-i18n="hero_title">ALL SERVICES</h1>
-              <p class="hero-sub" data-i18n="hero_sub">
-                We deliver fast, professional service for all your vehicle's
-                maintenance needs.
-              </p>
-              <div class="hero-actions">
-                <a
-                  href="#contact"
-                  class="btn btn-primary"
-                  data-i18n="hero_btn_schedule"
-                  >Schedule Appointment</a
-                >
-                <a
-                  href="tel:+919865625885"
-                  class="btn btn-outline"
-                  data-i18n="hero_btn_call"
-                  >Call +91 98656 25885</a
-                >
-              </div>
-            </div>
-            <div class="hero-visual">
-              <div class="car-card">
-                <img src="assets/car.png" alt="Car" />
-                <ul class="ticklist">
-                  <li>
-                    <img class="tickimg" src="assets/tick.png" alt="tick" /> 10
-                    Minute Oil Change
-                  </li>
-                  <li>
-                    <img class="tickimg" src="assets/tick.png" alt="tick" />
-                    Tire Repair
-                  </li>
-                  <li>
-                    <img class="tickimg" src="assets/tick.png" alt="tick" />
-                    Brake Service
-                  </li>
-                  <li>
-                    <img class="tickimg" src="assets/tick.png" alt="tick" />
-                    Full Service Mechanical
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SERVICES (full list) -->
-      <section id="services" class="section">
-        <div class="container">
-          <h2 data-i18n="services_h2">Services that keep you moving</h2>
-          <div class="svc-category">
-            <h3>Maintenance</h3>
-            <div class="svc-grid">
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/oil_changes.png"
-                    alt="Oil Changes"
-                  /><span>Oil Changes</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Signature ~10‑minute oil change</li>
-                    <li>No appointment; stay in your car</li>
-                    <li>Certified technicians</li>
-                    <li>20‑point courtesy inspection</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/air_filter.png"
-                    alt="Cabin & Engine Air Filter Replacement"
-                  /><span>Cabin & Engine Air Filter Replacement</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Inspect cabin & engine filters</li>
-                    <li>Quick replacement</li>
-                    <li>Improves air quality & performance</li>
-                    <li>Included in courtesy check</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/alignment.png"
-                    alt="Wheel Alignment Service"
-                  /><span>Wheel Alignment Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Correct misalignment</li>
-                    <li>Even tyre wear</li>
-                    <li>Straight, smooth tracking</li>
-                    <li>Pro technicians</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/brake_rotors.png"
-                    alt="Brake Rotors"
-                  /><span>Brake Rotors</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Inspect/service/replace</li>
-                    <li>Prevent grinding & damage</li>
-                    <li>Safe stopping</li>
-                    <li>Timely rotor care</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/brake_pads.png"
-                    alt="Brake Pads"
-                  /><span>Brake Pads</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Fast pad replacement</li>
-                    <li>Safety inspection</li>
-                    <li>Protect discs</li>
-                    <li>Drive with confidence</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/battery.png"
-                    alt="Battery Testing & Replacement"
-                  /><span>Battery Testing & Replacement</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Professional testing</li>
-                    <li>Quick replacement</li>
-                    <li>Avoid no‑starts</li>
-                    <li>Reliable power</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/cooling_system.png"
-                    alt="Cooling System Repair Service"
-                  /><span>Cooling System Repair Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Radiator, pump, thermostat</li>
-                    <li>Belts, hoses & fans</li>
-                    <li>Flushes & repairs</li>
-                    <li>Right engine temperature</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/fuel_system.png"
-                    alt="Fuel System Cleaning Service"
-                  /><span>Fuel System Cleaning Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Clean lines, pump, injectors</li>
-                    <li>Restore power & efficiency</li>
-                    <li>Best engine performance</li>
-                    <li>Prevent build‑up</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/headlights.png"
-                    alt="Headlight Replacement Service"
-                  /><span>Headlight Replacement Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Bulbs stocked</li>
-                    <li>Fast replacement</li>
-                    <li>Night & weather safety</li>
-                    <li>Stay visible</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/scheduled_maintenance.png"
-                    alt="Factory‑Scheduled Service & Routine Maintenance"
-                  /><span>Factory‑Scheduled Service & Routine Maintenance</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Follow manufacturer schedule</li>
-                    <li>Extend life & safety</li>
-                    <li>Prevent costly repairs</li>
-                    <li>Comprehensive checks</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/state_inspection.png"
-                    alt="State Inspections & Emissions Testing"
-                  /><span>State Inspections & Emissions Testing</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Quick, accurate</li>
-                    <li>Law compliant</li>
-                    <li>Safety & emissions</li>
-                    <li>Affordable</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/tire_repair.png"
-                    alt="Tire Repair Service"
-                  /><span>Tire Repair Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Assess flats & damage</li>
-                    <li>Safe repair when possible</li>
-                    <li>Quick turnaround</li>
-                    <li>Replacement if needed</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/tire_rotation.png"
-                    alt="Tire Rotation & Balance"
-                  /><span>Tire Rotation & Balance</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Extend tyre life</li>
-                    <li>Improve safety</li>
-                    <li>Regular rotation & balance</li>
-                    <li>Smoother ride</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/transmission_flush.png"
-                    alt="Transmission Flush Service"
-                  /><span>Transmission Flush Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Replace degraded fluid</li>
-                    <li>Remove debris</li>
-                    <li>Protect smooth shifting</li>
-                    <li>Extend life</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/windshield_wipers.png"
-                    alt="Windshield Wipers"
-                  /><span>Windshield Wipers</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Checked every visit</li>
-                    <li>Quick replacement</li>
-                    <li>Clear visibility</li>
-                    <li>All‑weather safety</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/tune_up.png"
-                    alt="Car Tune‑Up Service & Engine Repair"
-                  /><span>Car Tune‑Up Service & Engine Repair</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Restore performance</li>
-                    <li>Lower emissions</li>
-                    <li>Routine tune‑ups</li>
-                    <li>Reliable running</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="svc-category">
-            <h3>Repair Services</h3>
-            <div class="svc-grid">
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/ac_repair.png"
-                    alt="Car A/C Repair Service"
-                  /><span>Car A/C Repair Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Inspect, diagnose & repair</li>
-                    <li>Restore comfort & defogging</li>
-                    <li>Improve air quality</li>
-                    <li>Fast service</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/belts_hoses.png"
-                    alt="Belt & Hose Repair Service"
-                  /><span>Belt & Hose Repair Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Inspect every oil change</li>
-                    <li>Replace early</li>
-                    <li>Keep key systems running</li>
-                    <li>Prevent roadside failures</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/car_diagnostic.png"
-                    alt="Car Diagnostic Service"
-                  /><span>Car Diagnostic Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Read trouble codes</li>
-                    <li>Targeted inspection</li>
-                    <li>Clear repair plan</li>
-                    <li>Drive safely</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/drivetrain.png"
-                    alt="Drivetrain Service"
-                  /><span>Drivetrain Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Inspect & repair components</li>
-                    <li>Smooth power delivery</li>
-                    <li>Prevent damage</li>
-                    <li>Reliable performance</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/exhaust_muffler.png"
-                    alt="Exhaust & Muffler Repair Service"
-                  /><span>Exhaust & Muffler Repair Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Diagnose noise/smell/vibration</li>
-                    <li>Restore performance</li>
-                    <li>Safety checks</li>
-                    <li>Timely repairs</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/radiator.png"
-                    alt="Radiator Repair Service"
-                  /><span>Radiator Repair Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Overheating & leak diagnosis</li>
-                    <li>Service/repair radiator</li>
-                    <li>Correct engine temp</li>
-                    <li>Avoid damage</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/shocks_struts.png"
-                    alt="Shocks & Struts Repair Service"
-                  /><span>Shocks & Struts Repair Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Fix bumpy ride</li>
-                    <li>Replace worn units</li>
-                    <li>Improve stability</li>
-                    <li>Comfortable handling</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/starter_alternator.png"
-                    alt="Starter & Alternator Service"
-                  /><span>Starter & Alternator Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Inspect electrical system</li>
-                    <li>Prevent no‑start</li>
-                    <li>Reliable charging</li>
-                    <li>Proactive maintenance</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="svc-wrap">
-                <div class="svc-tile" role="button">
-                  <img
-                    src="images/services/steering_suspension.png"
-                    alt="Steering & Suspension Repair Service"
-                  /><span>Steering & Suspension Repair Service</span>
-                </div>
-                <div class="svc-details">
-                  <h4>What we cover</h4>
-                  <ul>
-                    <li>Inspect systems</li>
-                    <li>Smooth bumps</li>
-                    <li>Responsive control</li>
-                    <li>Safety & stability</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- GALLERY -->
-      <section id="gallery-section" class="section">
-        <div class="container">
-          <h2 data-i18n="gallery_h2">Gallery</h2>
-          <div
-            id="gallery"
-            class="gallery"
-            data-folder="images/gallery"
-            data-count="10"
-            data-base="image"
-            data-ext="jpg"
-          >
-            <div class="gallery__viewport">
-              <div id="galleryStage" class="gallery__stage"></div>
-            </div>
-            <div class="gallery__controls">
-              <button
-                id="galleryPrev"
-                class="btn btn-outline"
-                aria-label="Previous"
-              >
-                ◀ Prev
-              </button>
-              <button
-                id="galleryNext"
-                class="btn btn-outline"
-                aria-label="Next"
-              >
-                Next ▶
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT & SCHEDULE -->
-      <section id="contact" class="section contact">
-        <div class="container">
-          <h2 data-i18n="contact_h2">Contact & Schedule</h2>
-          <div class="gradient-panel">
-            <div class="info-grid">
-              <div class="info-card">
-                <h3 style="margin-top: 0">Reach us anytime</h3>
-                <div class="info-item">
-                  📞
-                  <a
-                    href="tel:+919865625885"
-                    style="color: #fff; text-decoration: underline"
-                    >+91 98656 25885</a
-                  >
-                  •
-                  <a
-                    href="tel:+919790566797"
-                    style="color: #fff; text-decoration: underline"
-                    >+91 97905 66797</a
-                  >
-                </div>
-                <div class="info-item">
-                  📍 Opp Indra Industries, Uthukuli Road, Kunnathur 638103
-                </div>
-                <div class="info-item">
-                  💬
-                  <a
-                    href="https://wa.me/919865625885"
-                    target="_blank"
-                    rel="noopener"
-                    style="color: #fff; text-decoration: underline"
-                    >WhatsApp</a
-                  >
-                </div>
-                <div class="info-item">
-                  ✅ 24/7 Breakdown • Shop hours: call to confirm
-                </div>
-              </div>
-              <div class="info-card" aria-label="Request appointment">
-                <h3 class="form-title">Request an appointment</h3>
-                <form onsubmit="return false">
-                  <div class="form-grid">
-                    <div>
-                      <label for="name" style="color: #fff">Full Name</label
-                      ><input id="name" class="input" type="text" required />
-                    </div>
-                    <div>
-                      <label for="phone" style="color: #fff">Phone</label
-                      ><input id="phone" class="input" type="tel" required />
-                    </div>
-                    <div>
-                      <label for="date" style="color: #fff"
-                        >Preferred Date</label
-                      ><input id="date" class="input" type="date" />
-                    </div>
-                    <div>
-                      <label for="time" style="color: #fff"
-                        >Preferred Time</label
-                      ><input id="time" class="input" type="time" />
-                    </div>
-                    <div>
-                      <label for="vehicle" style="color: #fff"
-                        >Vehicle (Make/Model)</label
-                      ><input id="vehicle" class="input" type="text" />
-                    </div>
-                    <div class="form-row-full">
-                      <label style="color: #fff"
-                        >Service Needed (select all that apply)</label
-                      >
-                      <div class="checkbox-group">
-                        <span class="chip"
-                          ><input id="svc_mech" type="checkbox" /><label
-                            for="svc_mech"
-                            >🔧 Mechanical</label
-                          ></span
-                        >
-                        <span class="chip"
-                          ><input id="svc_ac" type="checkbox" /><label
-                            for="svc_ac"
-                            >❄️ A/C</label
-                          ></span
-                        >
-                        <span class="chip"
-                          ><input id="svc_align" type="checkbox" /><label
-                            for="svc_align"
-                            >📏 Alignment</label
-                          ></span
-                        >
-                        <span class="chip"
-                          ><input id="svc_polish" type="checkbox" /><label
-                            for="svc_polish"
-                            >✨ Polishing</label
-                          ></span
-                        >
-                        <span class="chip"
-                          ><input id="svc_interior" type="checkbox" /><label
-                            for="svc_interior"
-                            >🧽 Interior</label
-                          ></span
-                        >
-                        <span class="chip"
-                          ><input id="svc_wash" type="checkbox" /><label
-                            for="svc_wash"
-                            >🚿 Wash</label
-                          ></span
-                        >
-                        <span class="chip"
-                          ><input id="svc_gas" type="checkbox" /><label
-                            for="svc_gas"
-                            >🛠️ Gas Fitting</label
-                          ></span
-                        >
-                        <span class="chip"
-                          ><input id="svc_tinker" type="checkbox" /><label
-                            for="svc_tinker"
-                            >🎨 Tinkering/Paint</label
-                          ></span
-                        >
-                        <span class="chip"
-                          ><input id="svc_other" type="checkbox" /><label
-                            for="svc_other"
-                            >➕ Other</label
-                          ></span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <label for="msg" style="color: #fff">Notes</label>
-                  <textarea id="msg" class="input" rows="3"></textarea>
-                  <div class="submit-row">
-                    <button class="btn btn-gradient" type="submit">
-                      Request Appointment
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Floating WhatsApp -->
-    <a
-      class="whatsapp"
-      href="https://wa.me/919865625885?text=Hello%20MR%20AUTO%20REPAIRS%2C%20I%20need%20service"
-      target="_blank"
-      rel="noopener"
-      aria-label="WhatsApp chat"
-    >
-      <img src="assets/whatsapp.svg" alt="WhatsApp" />
-      <span data-i18n="whatsapp_label">WhatsApp</span>
-    </a>
-
-    <!-- Footer (eye‑catching) -->
-    <footer role="contentinfo">
-      <div class="footer-top">
-        <div class="container footer-grid">
-          <div class="footer-brand">
-            <div class="logo">
-              <img
-                src="assets/logo.png"
-                alt="Logo"
-                style="height: 40px"
-              /><strong>MR AUTO REPAIRS</strong>
-            </div>
-            <p>
-              Performance engineering for automobiles—multibrand service & 24/7
-              breakdown.
-            </p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#contact">Schedule</a>
-              <a class="btn btn-outline" href="tel:+919865625885"
-                >Call +91 98656 25885</a
-              >
-            </div>
-          </div>
-          <div>
-            <h4 class="footer-title" data-i18n="footer_nav">Navigation</h4>
-            <ul class="footer-list">
-              <li><a href="#services" data-i18n="nav_services">Services</a></li>
-              <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="footer-title" data-i18n="footer_services">
-              Popular Services
-            </h4>
-            <ul class="footer-list">
-              <li><a href="#services">Oil Change</a></li>
-              <li><a href="#services">Brake Service</a></li>
-              <li><a href="#services">Alignment</a></li>
-              <li><a href="#services">A/C Repair</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="footer-title" data-i18n="footer_connect">Connect</h4>
-            <ul class="footer-list">
-              <li><a href="tel:+919865625885">Call</a></li>
-              <li>
-                <a
-                  href="https://wa.me/919865625885"
-                  target="_blank"
-                  rel="noopener"
-                  >WhatsApp</a
-                >
-              </li>
-              <li>
-                <a href="mailto:service@yourdomain.com"
-                  >service@yourdomain.com</a
-                >
-              </li>
-            </ul>
-            <h4
-              class="footer-title"
-              style="margin-top: 1rem"
-              data-i18n="footer_news"
-            >
-              Get updates
-            </h4>
-            <div class="news">
-              <input type="email" placeholder="Enter email" /><button>
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        © <span id="year"></span> MR AUTO REPAIRS • All rights reserved.
-      </div>
-    </footer>
-  </body>
+    <div class="footer-bottom">© <span id="year"></span> MR AUTO REPAIRS • All rights reserved.</div>
+  </footer>
+</body>
 </html>
