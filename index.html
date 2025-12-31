@@ -3,61 +3,126 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MR Auto Repairs — Multibrand Service & 24/7 Breakdown</title>
+    <title>
+      MR Auto Repairs — Auto Care & Premium Wash • Kunnathur, Tamil Nadu
+    </title>
     <meta
       name="description"
-      content="MR Auto Repairs — Fast diagnostics, trusted repairs, routine maintenance, and 24/7 breakdown support."
+      content="Complete auto care/repairs and premium car & two‑wheeler wash in Kunnathur. Serving Kunnathur, Chengappalli, Gobi, Tiruppur. 24/7 roadside assistance / emergency services available."
     />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://www.mrauto.in/" />
+    <meta
+      property="og:title"
+      content="MR Auto Repairs — Complete Auto Care & Premium Wash in Kunnathur, Tamil Nadu"
+    />
+    <meta
+      property="og:description"
+      content="Complete auto care/repairs and premium car & two‑wheeler wash in Kunnathur, Tamil Nadu. Serving Kunnathur, Chengappalli, Gobi, Tiruppur. 24/7 roadside assistance."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "MR Auto Repairs",
+        "description": "Complete auto care/repairs and premium car & two‑wheeler wash.",
+        "areaServed": [
+          "Kunnathur",
+          "Chengappalli",
+          "Gobichettipalayam",
+          "Tiruppur"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Thiruvaimuthaleur bus stop, Athiyur road",
+          "addressLocality": "Kunnathur",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "638103",
+          "addressCountry": "IN"
+        },
+        "url": "https://www.mrauto.in/",
+        "email": "service@mrauto.in",
+        "telephone": "+91 97905 66797",
+        "priceRange": "₹₹",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "brand": "Multibrand",
+        "serviceArea": {
+          "@type": "AdministrativeArea",
+          "name": "Kunnathur, Tamil Nadu"
+        },
+        "availableService": [
+          "Oil Change",
+          "Brake Service",
+          "Wheel Alignment",
+          "A/C Repair",
+          "Battery",
+          "Diagnostics",
+          "Suspension",
+          "Radiator",
+          "Tires",
+          "Rotation",
+          "Transmission",
+          "Exhaust",
+          "Electrical",
+          "Wipers",
+          "Headlight",
+          "Tune-Up",
+          "Wash",
+          "Tinkering & Painting"
+        ],
+        "sameAs": []
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="assets/icons/favicon.png" />
     <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="site.css" />
+    <link rel="preload" as="image" href="assets/logo/logo.png" />
+    <meta name="theme-color" content="#0f2a66" />
   </head>
   <body>
-    <!-- Top Breakdown Banner (sticky) -->
+    <!-- Banner -->
     <div class="alertbar" role="region" aria-label="Breakdown">
       <div class="container alertbar__inner">
         <div class="alertbar__left">
           <span class="pulse" aria-hidden="true"></span>
-          <span class="alertbar__title">
-            <span class="alertbar__title-desktop" data-i18n="ribbon"
-              >24/7 Breakdown & Roadside Assistance</span
-            >
-            <span class="alertbar__title-sos" data-i18n="ribbon_mobile"
-              >SOS</span
-            >
-          </span>
+          <span class="alertbar__title" data-i18n="ribbon"
+            >24/7 Breakdown & Roadside Assistance</span
+          >
         </div>
         <div class="alertbar__cta">
-          <a
-            class="btn btn-contrast"
-            href="tel:+919790566797"
-            aria-label="Call"
+          <a class="btn btn-contrast" href="tel:+919790566797"
+            ><img src="assets/icons/phone.svg" alt="" aria-hidden="true" /><span
+              data-i18n="cta_call_label"
+              >Call</span
+            ></a
           >
-            <img src="assets/icons/phone.svg" alt="" aria-hidden="true" />
-            <span class="btn-label" data-i18n="cta_call_label">Call</span>
-          </a>
           <a
             class="btn btn-whatsapp"
             href="https://wa.me/919790566797"
             target="_blank"
             rel="noopener"
-            aria-label="WhatsApp"
+            ><img
+              src="assets/icons/whatsapp.svg"
+              alt=""
+              aria-hidden="true"
+            /><span data-i18n="whatsapp_label">WhatsApp</span></a
           >
-            <img src="assets/icons/whatsapp.svg" alt="" aria-hidden="true" />
-            <span class="btn-label" data-i18n="whatsapp_label">WhatsApp</span>
-          </a>
         </div>
       </div>
     </div>
 
-    <!-- Header (sticky) -->
+    <!-- Header -->
     <header class="site-header">
       <div class="nav container">
         <div class="brand">
@@ -73,7 +138,6 @@
           <a href="#wash" data-i18n="nav_wash">Premium Wash</a>
           <a href="#contact" data-i18n="nav_contact">Contact</a>
         </nav>
-        <!-- Segmented language toggle (radio-based) -->
         <fieldset class="seg-toggle" role="radiogroup" aria-label="Language">
           <label class="seg-item"
             ><input
@@ -130,17 +194,17 @@
       <div id="drawerScrim" class="drawer-scrim" aria-hidden="true"></div>
     </header>
 
-    <!-- HERO v9 (logo removed, smaller title) -->
+    <!-- HERO -->
     <section class="hero-v9">
       <div class="container hero-v9-grid">
         <div class="hero-v9-copy">
           <h1 class="hero-v9-title" data-i18n="hero_title_v9">
-            Premium Multibrand Auto Care — Fast. Fair. Guaranteed.
+            Complete Auto Care, Repairs & Premium Wash in Kunnathur
           </h1>
           <p class="hero-v9-sub" data-i18n="hero_sub_v9">
-            From quick diagnostics to complex repairs, we deliver
-            dealership‑level quality with transparent pricing and a satisfaction
-            guarantee.
+            Serving Kunnathur, Chengappalli, Gobi & Tiruppur. 24/7 roadside
+            assistance and emergency help. Just give us a call — we'll handle
+            everything; you stay worry‑free.
           </p>
           <ul class="hero-v9-points">
             <li data-i18n="hero_p1">✔ Same‑day appointments available</li>
@@ -165,12 +229,17 @@
           </div>
         </div>
         <div class="hero-v9-art">
-          <img class="hero-v9-car" src="assets/logo/logo.png" alt="Car" />
+          <img
+            class="hero-v9-car"
+            src="assets/logo/logo.png"
+            alt="Car"
+            decoding="async"
+          />
         </div>
       </div>
     </section>
 
-    <!-- Services (full list) -->
+    <!-- SERVICES (all) -->
     <section id="services" class="section">
       <div class="container">
         <h2 class="services-title" data-i18n="services_h2">
@@ -212,6 +281,14 @@
                 <li data-i18n="svc_oil_b3">20‑point courtesy check</li>
                 <li data-i18n="svc_oil_b4">Premium oils for all makes</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/oil-change.jpg"
+                  alt="Oil Change"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -243,37 +320,14 @@
                 <li data-i18n="svc_filter_b3">Improved performance</li>
                 <li data-i18n="svc_filter_b4">OEM‑grade filters</li>
               </ul>
-            </details>
-          </article>
-          <article class="svc-card">
-            <img
-              class="svc-card__icon"
-              src="assets/icons/alignment.svg"
-              alt="Alignment"
-            />
-            <details class="svc-details">
-              <summary>
-                <div class="summary-row">
-                  <h3 class="svc-card__title" data-i18n="svc_align_title">
-                    Wheel Alignment
-                  </h3>
-                  <span class="toggle"
-                    ><img
-                      class="plus"
-                      src="assets/icons/plus.svg"
-                      alt="Expand" /><img
-                      class="minus"
-                      src="assets/icons/minus.svg"
-                      alt="Collapse"
-                  /></span>
-                </div>
-              </summary>
-              <ul class="svc-card__list">
-                <li data-i18n="svc_align_b1">Correct misalignment</li>
-                <li data-i18n="svc_align_b2">Even tyre wear</li>
-                <li data-i18n="svc_align_b3">Straight, smooth tracking</li>
-                <li data-i18n="svc_align_b4">Computerized precision</li>
-              </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/air-filter.jpg"
+                  alt="Air Filters"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -305,6 +359,14 @@
                 <li data-i18n="svc_brake_b3">Safe stopping</li>
                 <li data-i18n="svc_brake_b4">Quality parts fitted</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/brake.jpg"
+                  alt="Brake Service"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -332,6 +394,14 @@
                 <li data-i18n="svc_ac_b3">Leak tests & recharge</li>
                 <li data-i18n="svc_ac_b4">Compressor & blower care</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/ac.jpg"
+                  alt="A/C Repair"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -363,6 +433,14 @@
                 <li data-i18n="svc_batt_b3">Quick replacement</li>
                 <li data-i18n="svc_batt_b4">Warranty options</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/battery.jpg"
+                  alt="Battery"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -394,6 +472,14 @@
                 <li data-i18n="svc_diag_b3">Clear repair plan</li>
                 <li data-i18n="svc_diag_b4">Modern scan tools</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/diagnostics.jpg"
+                  alt="Computer Diagnostics"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -425,6 +511,14 @@
                 <li data-i18n="svc_susp_b3">Control arm & bushings</li>
                 <li data-i18n="svc_susp_b4">Premium parts</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/suspension.jpg"
+                  alt="Steering & Suspension"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -456,6 +550,14 @@
                 <li data-i18n="svc_rad_b3">Hoses & fans</li>
                 <li data-i18n="svc_rad_b4">Flushes & repairs</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/radiator.jpg"
+                  alt="Radiator & Cooling"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -487,6 +589,14 @@
                 <li data-i18n="svc_tire_b3">Replacement if needed</li>
                 <li data-i18n="svc_tire_b4">Valve & bead checks</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/tire.jpg"
+                  alt="Tire Repair"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -518,6 +628,14 @@
                 <li data-i18n="svc_rot_b3">Proper torque</li>
                 <li data-i18n="svc_rot_b4">Road force balance</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/rotation.jpg"
+                  alt="Rotation & Balance"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -549,6 +667,14 @@
                 <li data-i18n="svc_trans_b3">Protect smooth shifting</li>
                 <li data-i18n="svc_trans_b4">Extend life</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/transmission.jpg"
+                  alt="Transmission Flush"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -580,6 +706,14 @@
                 <li data-i18n="svc_exhaust_b3">Safety checks</li>
                 <li data-i18n="svc_exhaust_b4">Pipe & muffler fitment</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/exhaust.jpg"
+                  alt="Exhaust & Muffler"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -611,6 +745,14 @@
                 <li data-i18n="svc_elec_b3">Reliable charging</li>
                 <li data-i18n="svc_elec_b4">OEM replacements</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/electrical.jpg"
+                  alt="Starter & Alternator"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -642,6 +784,14 @@
                 <li data-i18n="svc_wiper_b3">Clear visibility</li>
                 <li data-i18n="svc_wiper_b4">All‑weather blades</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/wipers.jpg"
+                  alt="Windshield Wipers"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -673,6 +823,14 @@
                 <li data-i18n="svc_head_b3">Night & weather safety</li>
                 <li data-i18n="svc_head_b4">LED/Halogen options</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/headlight.jpg"
+                  alt="Headlight Replacement"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -704,13 +862,99 @@
                 <li data-i18n="svc_tune_b3">Spark plugs & coils</li>
                 <li data-i18n="svc_tune_b4">Fuel & air systems</li>
               </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/tuneup.jpg"
+                  alt="Engine Tune‑Up"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </details>
+          </article>
+          <article class="svc-card">
+            <img
+              class="svc-card__icon"
+              src="assets/icons/tinkering-paint.svg"
+              alt="Tinkering & Painting"
+            />
+            <details class="svc-details">
+              <summary>
+                <div class="summary-row">
+                  <h3 class="svc-card__title" data-i18n="svc_tinker_title">
+                    Tinkering & Painting
+                  </h3>
+                  <span class="toggle"
+                    ><img
+                      class="plus"
+                      src="assets/icons/plus.svg"
+                      alt="Expand" /><img
+                      class="minus"
+                      src="assets/icons/minus.svg"
+                      alt="Collapse"
+                  /></span>
+                </div>
+              </summary>
+              <ul class="svc-card__list">
+                <li data-i18n="svc_tinker_b1">Dent removal & bodywork</li>
+                <li data-i18n="svc_tinker_b2">Panel prep & primer</li>
+                <li data-i18n="svc_tinker_b3">Color matching & respray</li>
+                <li data-i18n="svc_tinker_b4">Clearcoat finishing & polish</li>
+              </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/tinkering-paint.jpg"
+                  alt="Tinkering & Painting"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </details>
+          </article>
+          <article class="svc-card">
+            <img
+              class="svc-card__icon"
+              src="assets/icons/alignment.svg"
+              alt="Alignment"
+            />
+            <details class="svc-details">
+              <summary>
+                <div class="summary-row">
+                  <h3 class="svc-card__title" data-i18n="svc_align_title">
+                    Wheel Alignment
+                  </h3>
+                  <span class="toggle"
+                    ><img
+                      class="plus"
+                      src="assets/icons/plus.svg"
+                      alt="Expand" /><img
+                      class="minus"
+                      src="assets/icons/minus.svg"
+                      alt="Collapse"
+                  /></span>
+                </div>
+              </summary>
+              <ul class="svc-card__list">
+                <li data-i18n="svc_align_b1">Correct misalignment</li>
+                <li data-i18n="svc_align_b2">Even tyre wear</li>
+                <li data-i18n="svc_align_b3">Straight, smooth tracking</li>
+                <li data-i18n="svc_align_b4">Computerized precision</li>
+              </ul>
+              <div class="svc-preview">
+                <img
+                  src="assets/images/services/alignment.jpg"
+                  alt="Wheel Alignment"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Premium Wash & Detailing -->
+    <!-- WASH -->
     <section id="wash" class="section wash">
       <div class="container">
         <h2 data-i18n="wash_h2">Premium Wash & Detailing</h2>
@@ -748,6 +992,14 @@
                 <li data-i18n="wash_car_b3">Wheel decontamination</li>
                 <li data-i18n="wash_car_b4">Interior vacuum & wipe‑down</li>
               </ul>
+              <div class="wash-preview">
+                <img
+                  src="assets/images/wash/polish-car.jpg"
+                  alt="Premium Car Polishing"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
           <article class="svc-card">
@@ -779,42 +1031,21 @@
                 <li data-i18n="wash_tw_b3">Detailed wipe‑down</li>
                 <li data-i18n="wash_tw_b4">Quick turnaround</li>
               </ul>
+              <div class="wash-preview">
+                <img
+                  src="assets/images/wash/shine-two-wheeler.jpg"
+                  alt="Two‑Wheeler Shine"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </details>
           </article>
         </div>
-        <div class="wash-gallery">
-          <img
-            src="assets/images/wash/polish-car.jpg"
-            alt="Premium Car Polishing"
-          />
-          <img
-            src="assets/images/wash/shine-two-wheeler.jpg"
-            alt="Two‑Wheeler Shine"
-          />
-        </div>
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section
-      id="gallery"
-      class="section section--gallery"
-      data-folder="assets/images/gallery"
-      data-count="6"
-      data-base="image"
-      data-ext="jpg"
-    >
-      <div class="container">
-        <h2 data-i18n="gallery_h2">Gallery</h2>
-        <div id="galleryStage" aria-live="polite"></div>
-        <div class="gallery-controls">
-          <button id="galleryPrev" class="btn btn-outline">◀ Prev</button>
-          <button id="galleryNext" class="btn btn-outline">Next ▶</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Request Appointment -->
+    <!-- CONTACT -->
     <section id="contact" class="section contact">
       <div class="container">
         <div class="booking">
@@ -924,6 +1155,15 @@
                   ><input
                     type="checkbox"
                     name="services[]"
+                    value="Tinkering & Painting"
+                  /><span data-i18n="svc_tinker_title"
+                    >🎨 Tinkering & Painting</span
+                  ></label
+                >
+                <label class="chip"
+                  ><input
+                    type="checkbox"
+                    name="services[]"
                     value="Other"
                   /><span data-i18n="chip_other">➕ Other</span></label
                 >
@@ -945,6 +1185,8 @@
                   name="phone"
                   placeholder="Phone"
                   required
+                  inputmode="numeric"
+                  pattern="\d{10}"
                   data-i18n-placeholder="ph_phone"
                 />
                 <input class="input" type="date" name="date" />
@@ -954,6 +1196,7 @@
                   type="text"
                   name="vehicle"
                   placeholder="Vehicle (Make/Model)"
+                  required
                   data-i18n-placeholder="ph_vehicle"
                 />
                 <textarea
@@ -970,43 +1213,101 @@
                   Send Request
                 </button>
               </div>
-              <div class="booking__aside">
-                <a
-                  class="btn btn-whatsapp fix-whatsapp"
-                  href="https://wa.me/919790566797"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img
-                    src="assets/icons/whatsapp.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <span data-i18n="contact_whatsapp">WhatsApp us instead</span>
-                </a>
-                <a
-                  class="btn btn-outline"
-                  href="tel:+919790566797"
-                  data-i18n="contact_call"
-                  >Or Call +91 97905 66797</a
-                >
-              </div>
             </div>
           </form>
         </div>
       </div>
     </section>
 
-    <!-- Floating WhatsApp button -->
-    <a
-      class="fab-whatsapp"
-      href="https://wa.me/919790566797"
-      target="_blank"
-      rel="noopener"
-      aria-label="Open WhatsApp chat"
-    >
-      <img src="assets/icons/whatsapp.gif" alt="" />
-    </a>
+    <!-- GALLERY (slider) -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2 data-i18n="gallery_h2">Gallery</h2>
+        <div class="slider" aria-label="Workshop gallery">
+          <button class="slider-btn prev" aria-label="Previous">‹</button>
+          <img
+            id="slide"
+            src="assets/images/gallery/gallery-1.jpg"
+            alt="Work sample 1"
+            width="75px"
+            height="400px"
+          />
+          <button class="slider-btn next" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>Do you provide pick‑up & drop?</summary>
+          <p>
+            Yes, within Kunnathur and nearby areas. Call +91 97905 66797 to
+            check availability.
+          </p>
+        </details>
+        <details>
+          <summary>How long does a premium car wash take?</summary>
+          <p>
+            Typically 45–60 minutes depending on vehicle size and condition.
+          </p>
+        </details>
+
+        <details>
+          <summary>What payments do you accept?</summary>
+          <p>UPI and cash are accepted at the shop.</p>
+        </details>
+    </section>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you provide pick‑up & drop?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, within Kunnathur and nearby areas. Call +91 97905 66797 to check availability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a premium car wash take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Typically 45–60 minutes depending on vehicle size and condition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are repairs under warranty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes—workmanship warranty is provided on most repairs. Ask our advisor for specifics."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What payments do you accept?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "UPI, cards, and cash are accepted at the shop."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you service two‑wheelers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we service both cars and two‑wheelers."
+            }
+          }
+        ]
+      }
+    </script>
 
     <!-- Footer -->
     <footer>
@@ -1014,7 +1315,11 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="logo">
-              <img src="assets/logo/logo.svg" alt="MR Auto Repairs" />
+              <img
+                class="brand__logo"
+                src="assets/logo/logo.png"
+                alt="MR Auto Repairs"
+              />
               <strong>MR AUTO REPAIRS</strong>
             </div>
             <p data-i18n="footer_about">
@@ -1092,11 +1397,7 @@
                   >WhatsApp</a
                 >
               </li>
-              <li>
-                <a href="mailto:service@yourdomain.com"
-                  >service@yourdomain.com</a
-                >
-              </li>
+              <!-- <li><a href="mailto:service@mrauto.in">service@mrauto.in</a></li> -->
             </ul>
           </div>
         </div>
@@ -1107,7 +1408,17 @@
       </div>
     </footer>
 
-    <script src="assets/i18n.js"></script>
-    <script src="main.js"></script>
+    <!-- Floating WhatsApp -->
+    <a
+      class="floating-wa"
+      href="https://wa.me/919790566797"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+      ><img src="assets/icons/whatsapp.gif" alt="" aria-hidden="true"
+    /></a>
+
+    <script defer src="assets/i18n.js"></script>
+    <script defer src="main.js"></script>
   </body>
 </html>
