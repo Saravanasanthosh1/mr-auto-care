@@ -1,4 +1,157 @@
-(function(){ window.I18N_DICT={
-  en:{ ribbon:"24/7 Breakdown Support • Call:", nav_services:"Services", nav_contact:"Contact", hero_title:"ALL SERVICES", hero_sub:"We deliver fast, professional service for all your vehicle's maintenance needs.", hero_btn_schedule:"Schedule Appointment", hero_btn_call:"Call +91 98656 25885", services_h2:"Services that keep you moving", contact_h2:"Contact & Schedule", whatsapp_label:"WhatsApp", footer_nav:"Navigation", footer_services:"Popular Services", footer_connect:"Connect", footer_news:"Get updates", gallery_h2:"Gallery" },
-  ta:{ ribbon:"24/7 அவசர சேவை • அழைப்பு:", nav_services:"சேவைகள்", nav_contact:"தொடர்பு", hero_title:"அனைத்து சேவைகள்", hero_sub:"உங்கள் வாகனத்திற்கு வேகமான, தொழில்முறை பராமரிப்பு சேவைகளை நாங்கள் வழங்குகிறோம்.", hero_btn_schedule:"அப்பாயிண்ட்மெண்ட் நிர்ணயிக்க", hero_btn_call:"அழைப்பு +91 98656 25885", services_h2:"உங்களை தொடர்ந்து இயக்கும் சேவைகள்", contact_h2:"தொடர்பு & அப்பாயிண்ட்மெண்ட்", whatsapp_label:"வாட்ஸ்அப்", footer_nav:"வழிசெலுத்தல்", footer_services:"பிரபல சேவைகள்", footer_connect:"தொடர்பு", footer_news:"புதுப்பிப்புகளை பெற", gallery_h2:"காட்சியகம்" }
-}; })();
+(function(){
+  const DICT={
+    en:{
+      ribbon:"24/7 Breakdown & Roadside Assistance",
+      cta_call_label:"Call",
+      whatsapp_label:"WhatsApp",
+      nav_services:"Services",
+      nav_wash:"Premium Wash",
+      nav_contact:"Contact",
+
+      hero_title_v9:"Complete Auto Care, Repairs & Premium Wash in Kunnathur",
+      hero_sub_v9:"Serving Kunnathur, Chengappalli, Gobi & Tiruppur. 24/7 roadside assistance and emergency help. Just give us a call — we'll handle everything; you stay worry‑free.",
+      hero_p1:"✔ Same‑day appointments available",
+      hero_p2:"✔ OEM‑grade parts & workmanship warranty",
+      hero_p3:"✔ 24/7 breakdown & roadside assistance",
+      hero_btn_book_v9:"Book Now",
+      hero_btn_call_v9:"Call +91 97905 66797",
+
+      services_h2:"Expert Auto Care — Keep Moving Confidently.",
+
+      svc_oil_title:"Oil Change", svc_oil_b1:"~10‑minute signature service", svc_oil_b2:"Stay‑in‑car convenience", svc_oil_b3:"20‑point courtesy check", svc_oil_b4:"Premium oils for all makes",
+      svc_filter_title:"Cabin & Engine Air Filters", svc_filter_b1:"Inspect & quick replacement", svc_filter_b2:"Better air quality", svc_filter_b3:"Improved performance", svc_filter_b4:"OEM‑grade filters",
+      svc_align_title:"Wheel Alignment", svc_align_b1:"Correct misalignment", svc_align_b2:"Even tyre wear", svc_align_b3:"Straight, smooth tracking", svc_align_b4:"Computerized precision",
+      svc_brake_title:"Brake Pads & Rotors", svc_brake_b1:"Inspect, service, replace", svc_brake_b2:"Prevent grinding & damage", svc_brake_b3:"Safe stopping", svc_brake_b4:"Quality parts fitted",
+      svc_ac_title:"A/C Diagnostics & Repair", svc_ac_b1:"Comfort restored quickly", svc_ac_b2:"Defogging & air quality", svc_ac_b3:"Leak tests & recharge", svc_ac_b4:"Compressor & blower care",
+      svc_batt_title:"Battery Testing & Replacement", svc_batt_b1:"Professional load testing", svc_batt_b2:"Prevent no‑starts", svc_batt_b3:"Quick replacement", svc_batt_b4:"Warranty options",
+      svc_diag_title:"Computer Diagnostics", svc_diag_b1:"Trouble codes readout", svc_diag_b2:"Targeted inspection", svc_diag_b3:"Clear repair plan", svc_diag_b4:"Modern scan tools",
+      svc_susp_title:"Steering & Suspension", svc_susp_b1:"Shocks & struts", svc_susp_b2:"Stable, smooth ride", svc_susp_b3:"Control arm & bushings", svc_susp_b4:"Premium parts",
+      svc_rad_title:"Radiator & Cooling", svc_rad_b1:"Overheating diagnosis", svc_rad_b2:"Pump & thermostat", svc_rad_b3:"Hoses & fans", svc_rad_b4:"Flushes & repairs",
+      svc_tire_title:"Tire Repair", svc_tire_b1:"Assess flats & damage", svc_tire_b2:"Safe repair when possible", svc_tire_b3:"Replacement if needed", svc_tire_b4:"Valve & bead checks",
+      svc_rot_title:"Rotation & Balance", svc_rot_b1:"Extend tyre life", svc_rot_b2:"Smoother ride", svc_rot_b3:"Proper torque", svc_rot_b4:"Road force balance",
+      svc_trans_title:"Transmission Flush", svc_trans_b1:"Replace degraded fluid", svc_trans_b2:"Remove debris", svc_trans_b3:"Protect smooth shifting", svc_trans_b4:"Extend life",
+      svc_exhaust_title:"Exhaust & Muffler", svc_exhaust_b1:"Noise/smell diagnosis", svc_exhaust_b2:"Restore performance", svc_exhaust_b3:"Safety checks", svc_exhaust_b4:"Pipe & muffler fitment",
+      svc_elec_title:"Starter & Alternator", svc_elec_b1:"Electrical system checks", svc_elec_b2:"Prevent no‑start", svc_elec_b3:"Reliable charging", svc_elec_b4:"OEM replacements",
+      svc_wiper_title:"Windshield Wipers", svc_wiper_b1:"Checked every visit", svc_wiper_b2:"Quick replacement", svc_wiper_b3:"Clear visibility", svc_wiper_b4:"All‑weather blades",
+      svc_head_title:"Headlight Replacement", svc_head_b1:"Bulbs stocked", svc_head_b2:"Fast replacement", svc_head_b3:"Night & weather safety", svc_head_b4:"LED/Halogen options",
+      svc_tune_title:"Engine Tune‑Up", svc_tune_b1:"Restore performance", svc_tune_b2:"Lower emissions", svc_tune_b3:"Spark plugs & coils", svc_tune_b4:"Fuel & air systems",
+      svc_tinker_title:"Tinkering & Painting", svc_tinker_b1:"Dent removal & bodywork", svc_tinker_b2:"Panel prep & primer", svc_tinker_b3:"Color matching & respray", svc_tinker_b4:"Clearcoat finishing & polish",
+
+      wash_h2:"Premium Wash & Detailing",
+      wash_sub:"High‑premium cleaning for cars and two‑wheelers—a level of finish no one else offers in our area.",
+      wash_car_title:"Premium Car Wash",
+      wash_car_b1:"pH‑neutral foam & microfiber",
+      wash_car_b2:"Two‑bucket & contact‑safe",
+      wash_car_b3:"Wheel decontamination",
+      wash_car_b4:"Interior vacuum & wipe‑down",
+      wash_tw_title:"Two‑Wheeler Wash",
+      wash_tw_b1:"Gentle degrease & rinse",
+      wash_tw_b2:"Chain & sprocket safe",
+      wash_tw_b3:"Detailed wipe‑down",
+      wash_tw_b4:"Quick turnaround",
+
+      gallery_h2:"Gallery",
+
+      contact_h2:"Request an Appointment",
+      contact_sub:"Select services, pick a time, and we’ll confirm.",
+      ph_name:"Full Name",
+      ph_phone:"Phone",
+      ph_vehicle:"Vehicle (Make/Model)",
+      ph_notes:"Notes",
+      btn_send:"Send Request",
+      contact_whatsapp:"WhatsApp us instead",
+      contact_call:"Or Call +91 97905 66797",
+
+      footer_about:"Performance engineering for automobiles—multibrand service & 24/7 breakdown.",
+      footer_schedule:"Schedule",
+      footer_call:"Call +91 97905 66797",
+      footer_nav:"Navigation",
+      footer_privacy:"Privacy Policy",
+      footer_terms:"Terms of Service",
+      footer_pop:"Popular Services",
+      footer_connect:"Connect",
+      footer_call_short:"Call",
+      rights:"All rights reserved.",
+
+      chip_oil:"🛢️ Oil Change", chip_brake:"🛑 Brakes", chip_align:"📏 Alignment", chip_ac:"❄️ A/C", chip_batt:"🔋 Battery", chip_susp:"🛞 Suspension", chip_tire:"🛞 Tires", chip_diag:"🧪 Diagnostics", chip_cool:"🌊 Cooling", chip_trans:"⚙️ Transmission", chip_exhaust:"🔧 Exhaust", chip_tune:"🔩 Tune‑Up", chip_wash:"🚿 Wash", chip_other:"➕ Other"
+    },
+    ta:{
+      ribbon:"24/7 அவசர சேவை & ரோடு சைடு ஹெல்ப்",
+      cta_call_label:"கால்",
+      whatsapp_label:"வாட்ஸ்அப்",
+      nav_services:"சேவைகள்",
+      nav_wash:"பிரீமியம் வாஷ்",
+      nav_contact:"கான்டாக்ட்",
+
+      hero_title_v9:"குன்னத்தூர்ல கார் முழுக் கேர், ரிப்பேர் & பிரீமியம் வாஷ்",
+      hero_sub_v9:"குன்னத்தூர், செங்காப்பள்ளி, கோபி, திருப்பூர் சுற்றுல சேவை. 24/7 ரோட்ல உதவி / அவசர சேவை ரெடி. ஒரு கால் பண்ணுங்க — மீதியெல்லாம் நாங்களே செட்டப்; நீங்க கவலை இல்லாம இருக்கலாம்.",
+      hero_p1:"✔ அதே நாளே அபாயிண்ட்மெண்ட் கிடைக்கும்",
+      hero_p2:"✔ OEM குவாலிட்டி parts & வேலை வாறண்டி",
+      hero_p3:"✔ 24/7 breakdown & roadside ஹெல்ப்",
+      hero_btn_book_v9:"இப்போ புக் பண்ணுங்க",
+      hero_btn_call_v9:"கால் +91 97905 66797",
+
+      services_h2:"எக்ஸ்பர்ட் ஆட்டோ கேர் — தினமும் கான்ஃபிடென்ட்.",
+
+      svc_oil_title:"ஆயில் சேஞ்ச்", svc_oil_b1:"~10 நிமிஷம் quick service", svc_oil_b2:"கார்லே இருக்கலாம்", svc_oil_b3:"20‑பாயிண்ட் courtesy check", svc_oil_b4:"அனைத்து make‑க்கு premium oils",
+      svc_filter_title:"கேபின் & எஞ்சின் ஏர் ஃபில்டர்ஸ்", svc_filter_b1:"சோதனை & விரைவு மாற்றம்", svc_filter_b2:"நல்ல காற்று quality", svc_filter_b3:"பெர்ஃபார்மன்ஸ் அப்ரூவ்", svc_filter_b4:"OEM grade filters",
+      svc_align_title:"வீல் alignment", svc_align_b1:"alignment correct", svc_align_b2:"even tyre wear", svc_align_b3:"நேரா, ஸ்மூத் டிராக்கிங்", svc_align_b4:"கம்ப்யூட்டர் precision",
+      svc_brake_title:"பிரேக் pads & rotors", svc_brake_b1:"சோதனை/சேவை/மாற்றம்", svc_brake_b2:"grinding & damage avoid", svc_brake_b3:"சேஃப் ஸ்டாப்பிங்", svc_brake_b4:"quality parts fit",
+      svc_ac_title:"A/C டையக்னோஸ்டிக்ஸ் & ரிப்பேர்", svc_ac_b1:"கம்ஃபர்ட் quick restore", svc_ac_b2:"defog & air quality", svc_ac_b3:"leak test & recharge", svc_ac_b4:"compressor & blower care",
+      svc_batt_title:"பேட்டரி டெஸ்ட் & ரிப்ளேஸ்", svc_batt_b1:"proper load test", svc_batt_b2:"no‑start பிரச்சனை avoid", svc_batt_b3:"விரைவு ரிப்ளேஸ்", svc_batt_b4:"வாறண்டி options",
+      svc_diag_title:"கம்ப்யூட்டர் டையக்னோஸ்டிக்ஸ்", svc_diag_b1:"trouble codes read", svc_diag_b2:"targeted inspection", svc_diag_b3:"clear repair plan", svc_diag_b4:"modern scan tools",
+      svc_susp_title:"ஸ்டீரிங் & சஸ்பென்ஷன்", svc_susp_b1:"shocks & struts", svc_susp_b2:"ஸ்டேபிள், ஸ்மூத் ரைடு", svc_susp_b3:"control arm & bushings", svc_susp_b4:"premium parts",
+      svc_rad_title:"ரடியேட்டர் & கூலிங்", svc_rad_b1:"overheating diagnosis", svc_rad_b2:"pump & thermostat", svc_rad_b3:"hoses & fans", svc_rad_b4:"flush & repair",
+      svc_tire_title:"டைர் ரிப்பேர்", svc_tire_b1:"flat/damage check", svc_tire_b2:"safe repair (possible)", svc_tire_b3:"need‑na replace", svc_tire_b4:"valve & bead check",
+      svc_rot_title:"ரோட்டேஷன் & பாலன்ஸ்", svc_rot_b1:"டைர் life நீட்டிக்க", svc_rot_b2:"ஸ்மூத் ரைடு", svc_rot_b3:"proper torque", svc_rot_b4:"road‑force balance",
+      svc_trans_title:"டிரான்ஸ்மிஷன் ஃப்ளஷ்", svc_trans_b1:"old fluid replace", svc_trans_b2:"dirt remove", svc_trans_b3:"ஸ்மூத் shifting protect", svc_trans_b4:"life extend",
+      svc_exhaust_title:"எக்ஸாஸ்ட் & மஃப்ளர்", svc_exhaust_b1:"noise/smell check", svc_exhaust_b2:"perform restore", svc_exhaust_b3:"safety checks", svc_exhaust_b4:"pipe & muffler fit",
+      svc_elec_title:"ஸ்டார்டர் & ஆல்டர்நேட்டர்", svc_elec_b1:"electric system check", svc_elec_b2:"no‑start avoid", svc_elec_b3:"reliable charging", svc_elec_b4:"OEM replace",
+      svc_wiper_title:"விண்ட்ஷீல்ட் வைபர்ஸ்", svc_wiper_b1:"ஒவ்வொரு visit‑லே check", svc_wiper_b2:"quick replace", svc_wiper_b3:"clear vision", svc_wiper_b4:"all‑weather blades",
+      svc_head_title:"ஹெட்லைட் ரிப்ளேஸ்", svc_head_b1:"bulbs stock", svc_head_b2:"விரைவு replace", svc_head_b3:"night/weather safety", svc_head_b4:"LED/Halogen options",
+      svc_tune_title:"எஞ்சின் ட்யூன்‑அப்", svc_tune_b1:"performance restore", svc_tune_b2:"emission குறை", svc_tune_b3:"spark plugs & coils", svc_tune_b4:"fuel & air systems",
+      svc_tinker_title:"டிங்கரிங் & பேயிண்டிங்", svc_tinker_b1:"டெண்ட் ரிமூவல் & பாடிவொர்க்", svc_tinker_b2:"பேனல் பிரெப் & பிரைமர்", svc_tinker_b3:"கலர் மேட்ச் & ரீஸ்ப்ரே", svc_tinker_b4:"க்ளியர்கோட் finish & பாலிஷ்",
+
+      wash_h2:"பிரீமியம் வாஷ் & டீட்டெய்லிங்",
+      wash_sub:"கார்/இருசக்கரங்களுக்கு high‑premium கிளினிங் — எங்க பக்கத்துல இப்படிப்பட்ட finish வேற எங்கமும் கிடைக்காது.",
+      wash_car_title:"பிரீமியம் கார் வாஷ்",
+      wash_car_b1:"pH‑neutral foam & microfiber",
+      wash_car_b2:"two‑bucket, contact‑safe",
+      wash_car_b3:"wheel de‑contamination",
+      wash_car_b4:"interior vacuum & wipe‑down",
+      wash_tw_title:"இருசக்கர வாஷ்",
+      wash_tw_b1:"ஜென்டில் degrease & rinse",
+      wash_tw_b2:"chain & sprocket safe",
+      wash_tw_b3:"டீட்டெய்ல்ட் wipe‑down",
+      wash_tw_b4:"quick turnaround",
+
+      gallery_h2:"காட்சிகள்",
+
+      contact_h2:"அப்பாயிண்ட்மெண்ட் ரெக்வெஸ்ட்",
+      contact_sub:"சேவை select பண்ணி டைம் choose பண்ணுங்க — நாங்களே confirm பண்ணுறோம்.",
+      ph_name:"பெயர்",
+      ph_phone:"போன்",
+      ph_vehicle:"வாகனம் (மேக்/மாடல்)",
+      ph_notes:"நோட்ஸ் (ஆப்ஷனல்)",
+      btn_send:"சேன்ட் ரெக்வெஸ்ட்",
+      contact_whatsapp:"வாட்ஸ்அப்",
+      contact_call:"கால் +91 97905 66797",
+
+      footer_about:"ஆட்டோ performance engineering — மல்டிபிராண்ட் சேவை & 24/7 breakdown.",
+      footer_schedule:"ஸ்கெஜூல்",
+      footer_call:"கால் +91 97905 66797",
+      footer_nav:"நெவிகேஷன்",
+      footer_privacy:"Privacy Policy",
+      footer_terms:"Terms of Service",
+      footer_pop:"பாப்புலர் சேவைகள்",
+      footer_connect:"கான்டாக்ட்",
+      footer_call_short:"கால்",
+      rights:"அனைத்தும் உரிமையுடன்.",
+
+      chip_oil:"🛢️ ஆயில் சேஞ்ச்", chip_brake:"🛑 பிரேக்", chip_align:"📏 alignment", chip_ac:"❄️ A/C", chip_batt:"🔋 battery", chip_susp:"🛞 suspension", chip_tire:"🛞 டயர்", chip_diag:"🧪 diagnostics", chip_cool:"🌊 cooling", chip_trans:"⚙️ transmission", chip_exhaust:"🔧 exhaust", chip_tune:"🔩 tune‑அப்", chip_wash:"🚿 wash", chip_other:"➕ மற்றவை"
+    }
+  };
+  function applyText(el, val){ if(el) el.textContent = val; }
+  window.I18N_APPLY = function(lang){ const dict = DICT[lang] || DICT['en']; try{ localStorage.setItem('lang', lang); }catch(e){} try{ document.documentElement.setAttribute('lang', lang); }catch(e){} document.querySelectorAll('[data-i18n]').forEach(el=>{ const key = el.getAttribute('data-i18n'); if(key && dict[key]){ applyText(el, dict[key]); } }); document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{ const key = el.getAttribute('data-i18n-placeholder'); if(key && dict[key]){ el.setAttribute('placeholder', dict[key]); } }); const hdrEn=document.getElementById('langEn'), hdrTa=document.getElementById('langTa'); const mobEn=document.getElementById('langEnM'), mobTa=document.getElementById('langTaM'); const isEn = lang==='en'; if(hdrEn) hdrEn.checked=isEn; if(hdrTa) hdrTa.checked=!isEn; if(mobEn) mobEn.checked=isEn; if(mobTa) mobTa.checked=!isEn; };
+  window.addEventListener('DOMContentLoaded', ()=>{ let lang='en'; try{ lang = localStorage.getItem('lang') || 'en'; }catch(e){} window.I18N_APPLY(lang); });
+})();
